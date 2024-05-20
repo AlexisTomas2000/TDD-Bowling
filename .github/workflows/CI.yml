@@ -15,12 +15,12 @@ jobs:
     # Nombre del job
     name: Build and Test
     # Especifica el sistema operativo en el que se ejecutará el job
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Estrategia para correr pruebas en múltiples versiones de Python
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9, 3.10]
+        python-version: [3.7, 3.8, 3.9, 3.10, 3.11]
 
     # Pasos a ejecutar en el job
     steps:
@@ -49,5 +49,5 @@ jobs:
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
-      with:        
+      with:
         token: ${{ secrets.CODECOV_TOKEN }}
