@@ -1,4 +1,4 @@
-from Bowling import *
+import Bowling 
 
 
 jugada = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9,1,1]
