@@ -7,4 +7,3 @@ def test_Spare():
     for tiro in jugada:
         jogo.Tirar(tiro)
     assert jogo.Score()==29
-
