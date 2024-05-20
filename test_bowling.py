@@ -1,6 +1,9 @@
-from Bowling import Juego
+from Bowling import *
 
 
-def test_juego():
-    juego = Juego()
-    assert juego is not None
+jugada = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9,1,1]
+def test_Spare():
+    jogo = Juego()
+    for tiro in jugada:
+        jogo.Tirar(tiro)
+    assert jogo.Score()==29
