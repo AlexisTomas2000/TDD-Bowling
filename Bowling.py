@@ -2,7 +2,6 @@ class Juego:
     def __init__(self, *args):
         pass
 
-    
     def jugar(self):
         pass
 
